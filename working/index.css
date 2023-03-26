@@ -8,8 +8,68 @@ body {
     font-family: 'Chivo', sans-serif;
 }
 
+.decorative-pattern {
+    display: none;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    text-transform: uppercase;
+    color: #54E6AF;
+}
+
+.heading, .signup-box_text {
+    font-weight: 100;
+}
+
+.heading__light {
+    color: #C2CBE5;
+}
+
 
 @media screen and (min-width: 768px) {
+    .signup-form {
+        background: #2C344B;
+        width: 427px;
+        height: 56px;
+        font-size: 14px;
+        line-height: 28px;
+        color: #121725;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 28px;
+        margin-bottom: 64px;
+    }
+
+    input, button {
+        border-radius: 28px;
+        border-style: none;
+        margin: 5px;
+        font-weight: 700;
+        font-family: 'Chivo', sans-serif;
+    }
+
+    input {
+        background: #2C344B;
+        padding-left: 32px;
+        border-radius: 28px;
+        color: white;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    button {
+        font-size: 14px;
+        line-height: 28px;
+        color: #121725;
+        padding: 5px 27px;
+    }
+
     .decorative-pattern {
         width: 232px;
         height: 104px;
@@ -46,21 +106,11 @@ body {
         width: 635px;
     }
 
-    h1 {
+    .heading {
         font-size: 48px;
         line-height: 56px;
-        text-transform: uppercase;
-        color: #54E6AF;
         margin-top: 93px;
         margin-bottom: 31px;
-    }
-
-    .heading, .signup-box_text {
-        font-weight: 100;
-    }
-
-    .heading__light {
-        color: #C2CBE5;
     }
 
     .signup-box_text {
@@ -127,42 +177,6 @@ body {
     }
 }
 
-.signup-form {
-    background: #2C344B;
-    width: 427px;
-    height: 56px;
-    font-size: 14px;
-    line-height: 28px;
-    color: #121725;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 28px;
-    margin-bottom: 64px;
-}
-
-input, button {
-    border-radius: 28px;
-    border-style: none;
-    margin: 5px;
-    font-weight: 700;
-    font-family: 'Chivo', sans-serif;
-}
-
-input {
-    background: #2C344B;
-    padding-left: 32px;
-    border-radius: 28px;
-    color: white;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-}
-
-button {
-    font-size: 14px;
-    line-height: 28px;
-    color: #121725;
-    padding: 5px 27px;
-}
 
 .client-logos {
     width: 536px;
