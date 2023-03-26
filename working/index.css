@@ -19,5 +19,53 @@ body {
 
 .signup-box {
     background: #121725;
-    width: 509px;
+    width: 723px;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 62px;
+    text-transform: uppercase;
+    color: #54E6AF;
+    margin-top: 88px;
+    margin-bottom: 24px;
+}
+
+.signup-box_text {
+    width: 445px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #C2CBE5;
+    margin-bottom: 40px;
+}
+
+.signup-input {
+    background: #2C344B;
+    width: 427px;
+    height: 56px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #121725;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 28px;
+    margin-bottom: 64px;
+}
+
+input, button {
+    border-radius: 28px;
+    border-style: none;
+    margin: 5px;
+}
+
+input {
+    background: #2C344B;
+    margin-left: 32px;
+}
+
+button {
+    font-size: 14px;
+    line-height: 28px;
+    color: #121725;
+    padding: 5px 27px;
 }
