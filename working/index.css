@@ -64,6 +64,8 @@ input, button {
     border-radius: 28px;
     border-style: none;
     margin: 5px;
+    font-weight: 700;
+    font-family: 'Chivo', sans-serif;
 }
 
 input {
