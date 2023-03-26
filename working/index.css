@@ -231,7 +231,8 @@ button:hover {
 @media screen and (min-width: 1440px) {
     .logo {
         top: -28px;
-        margin: 0
+        margin-left: 40px;
+        margin-top: 0;
     }
 
     .hero-area {
