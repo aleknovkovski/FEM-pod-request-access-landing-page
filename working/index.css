@@ -39,6 +39,10 @@ h1 {
     margin-bottom: 40px;
 }
 
+h1, .signup-box_text {
+    font-weight: 100;
+}
+
 .signup-input {
     background: #2C344B;
     width: 427px;
