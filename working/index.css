@@ -4,6 +4,12 @@ body {
     font-family: 'Chivo', sans-serif;
 }
 
+.logo {
+    width: 135px;
+    height: 56px;
+    position: relative;
+    top: -28px
+}
 .hero-area {
     height: 640px;
     width: 1275px;
