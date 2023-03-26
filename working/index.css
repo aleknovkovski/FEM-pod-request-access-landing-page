@@ -4,55 +4,57 @@ body {
     font-family: 'Chivo', sans-serif;
 }
 
-.logo {
-    width: 135px;
-    height: 56px;
-    position: absolute;
-    top: -28px
-}
+@media screen and (min-width: 1440px) {
+    .logo {
+        width: 135px;
+        height: 56px;
+        position: absolute;
+        top: -28px
+    }
 
-.hero-area {
-    position: relative;
-    height: 640px;
-    width: 1275px;
-    margin: 130px auto;
-    background: url("./assets/desktop/image-host.jpg") no-repeat top right;
-}
+    .hero-area {
+        position: relative;
+        height: 640px;
+        width: 1275px;
+        margin: 130px auto;
+        background: url("./assets/desktop/image-host.jpg") no-repeat top right;
+    }
 
-.hero-area .inner-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    .hero-area .inner-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-.signup-box {
-    background: #121725;
-    width: 723px;
-}
+    .signup-box {
+        background: #121725;
+        width: 723px;
+    }
 
-h1 {
-    font-size: 52px;
-    line-height: 62px;
-    text-transform: uppercase;
-    color: #54E6AF;
-    margin-top: 88px;
-    margin-bottom: 24px;
-}
+    h1 {
+        font-size: 52px;
+        line-height: 62px;
+        text-transform: uppercase;
+        color: #54E6AF;
+        margin-top: 88px;
+        margin-bottom: 24px;
+    }
 
-.signup-box_text {
-    width: 445px;
-    font-size: 18px;
-    line-height: 28px;
-    color: #C2CBE5;
-    margin-bottom: 40px;
-}
+    .signup-box_text {
+        width: 445px;
+        font-size: 18px;
+        line-height: 28px;
+        color: #C2CBE5;
+        margin-bottom: 40px;
+    }
 
-.heading, .signup-box_text {
-    font-weight: 100;
-}
+    .heading, .signup-box_text {
+        font-weight: 100;
+    }
 
-.heading__light {
-    color: #C2CBE5;
+    .heading__light {
+        color: #C2CBE5;
+    }
 }
 
 .signup-input {
