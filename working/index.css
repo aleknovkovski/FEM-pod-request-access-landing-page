@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
 }
 
@@ -8,117 +8,124 @@ body {
     font-family: 'Chivo', sans-serif;
 }
 
-.decorative-pattern {
-    width: 232px;
-    height: 104px;
-    margin-top: 153px;
-    position: absolute;
-    bottom: -153px;
+
+@media screen and (min-width: 768px) {
+    .decorative-pattern {
+        width: 232px;
+        height: 104px;
+        position: absolute;
+        bottom: -257px;
+    }
+
+    .logo {
+        width: 135px;
+        height: 56px;
+        position: absolute;
+        margin-top: 59px;
+        margin-left: 39px;
+    }
+
+    .hero-area {
+        position: relative;
+        margin: 0 auto;
+        width: 768px;
+        height: 767px;
+        background: url("./assets/tablet/image-host.jpg") no-repeat top right;
+    }
+
+    .hero-area .inner-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .signup-box {
+        margin-top: 152px;
+        margin-left: 39px;
+        background: #121725;
+        width: 635px;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        text-transform: uppercase;
+        color: #54E6AF;
+        margin-top: 93px;
+        margin-bottom: 31px;
+    }
+
+    .heading, .signup-box_text {
+        font-weight: 100;
+    }
+
+    .heading__light {
+        color: #C2CBE5;
+    }
+
+    .signup-box_text {
+        width: 445px;
+        font-size: 18px;
+        line-height: 28px;
+        color: #C2CBE5;
+        margin-bottom: 40px;
+    }
 }
 
-.logo {
-    width: 135px;
-    height: 56px;
-    position: absolute;
-    margin-top: 59px;
-    margin-left: 39px;
+@media screen and (min-width: 1440px) {
+    .logo {
+        top: -28px
+    }
+
+    .hero-area {
+        position: relative;
+        height: 640px;
+        width: 1275px;
+        margin: 130px auto;
+        background: url("./assets/desktop/image-host.jpg") no-repeat top right;
+    }
+
+    .hero-area .inner-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .signup-box {
+        background: #121725;
+        width: 723px;
+    }
+
+    h1 {
+        font-size: 52px;
+        line-height: 62px;
+        text-transform: uppercase;
+        color: #54E6AF;
+        margin-top: 88px;
+        margin-bottom: 24px;
+    }
+
+    .signup-box_text {
+        width: 445px;
+        font-size: 18px;
+        line-height: 28px;
+        color: #C2CBE5;
+        margin-bottom: 40px;
+    }
+
+    .heading, .signup-box_text {
+        font-weight: 100;
+    }
+
+    .heading__light {
+        color: #C2CBE5;
+    }
+
+    .decorative-pattern {
+        right: 0;
+        bottom: -50px;
+    }
 }
-
-.hero-area {
-    position: relative;
-    margin: 0 auto;
-    width: 768px;
-    height: 767px;
-    background: url("./assets/tablet/image-host.jpg") no-repeat top right;
-}
-
-.hero-area .inner-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.signup-box {
-    margin-top: 152px;
-    margin-left: 39px;
-    background: #121725;
-    width: 635px;
-}
-
-h1 {
-    font-size: 48px;
-    line-height: 56px;
-    text-transform: uppercase;
-    color: #54E6AF;
-    margin-top: 93px;
-    margin-bottom: 31px;
-}
-
-.heading, .signup-box_text {
-    font-weight: 100;
-}
-
-.heading__light {
-    color: #C2CBE5;
-}
-
-.signup-box_text {
-    width: 445px;
-    font-size: 18px;
-    line-height: 28px;
-    color: #C2CBE5;
-    margin-bottom: 40px;
-}
-
-/*@media screen and (min-width: 1440px) {*/
-/*    .logo {*/
-/*        top: -28px*/
-/*    }*/
-
-/*    .hero-area {*/
-/*        position: relative;*/
-/*        height: 640px;*/
-/*        width: 1275px;*/
-/*        margin: 130px auto;*/
-/*        background: url("./assets/desktop/image-host.jpg") no-repeat top right;*/
-/*    }*/
-
-/*    .hero-area .inner-box {*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        justify-content: space-between;*/
-/*    }*/
-
-/*    .signup-box {*/
-/*        background: #121725;*/
-/*        width: 723px;*/
-/*    }*/
-
-/*    h1 {*/
-/*        font-size: 52px;*/
-/*        line-height: 62px;*/
-/*        text-transform: uppercase;*/
-/*        color: #54E6AF;*/
-/*        margin-top: 88px;*/
-/*        margin-bottom: 24px;*/
-/*    }*/
-
-/*    .signup-box_text {*/
-/*        width: 445px;*/
-/*        font-size: 18px;*/
-/*        line-height: 28px;*/
-/*        color: #C2CBE5;*/
-/*        margin-bottom: 40px;*/
-/*    }*/
-
-/*    .heading, .signup-box_text {*/
-/*        font-weight: 100;*/
-/*    }*/
-
-/*    .heading__light {*/
-/*        color: #C2CBE5;*/
-/*    }*/
-/*}*/
 
 .signup-input {
     background: #2C344B;
@@ -176,9 +183,3 @@ button {
 .client-logo__google {
     height: 18px;
 }
-
-/*.decorative-pattern {*/
-/*    position: absolute;*/
-/*    right: 130px;*/
-/*    bottom: 0;*/
-/*}*/
