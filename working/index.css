@@ -12,14 +12,8 @@ body {
     display: none;
 }
 
-.hero-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 24px;
-}
-
-.logo {
+.logo-area {
+    text-align: center;
     margin-top: 62px;
     margin-bottom: 57px;
 }
@@ -82,7 +76,7 @@ button {
     line-height: 28px;
     color: #121725;
     background: #54E6AF;
-    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+    box-shadow: 0 25px 20px -20px rgba(84, 230, 175, 0.497913);
 }
 
 .client-logos {
@@ -104,8 +98,15 @@ button {
     height: 15px;
 }
 
+@media screen and (max-width: 767px) {
+    .hero-area {
+        padding: 24px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .signup-form {
+        order: 0;
         background: #2C344B;
         width: 427px;
         height: 56px;
@@ -119,11 +120,21 @@ button {
         margin-bottom: 64px;
     }
 
+    button {
+        padding: 0 27px;
+    }
+
     .decorative-pattern {
+        display: block;
         width: 232px;
         height: 104px;
         position: absolute;
         bottom: -257px;
+    }
+
+    .logo-area {
+        margin: 0;
+        text-align: left;
     }
 
     .logo {
@@ -134,19 +145,16 @@ button {
         margin-left: 39px;
     }
 
-    .hero-area {
-        position: relative;
-        margin: 0 auto;
-        width: 768px;
-        height: 767px;
-        background: url("./assets/tablet/image-host.jpg") no-repeat top right;
-    }
-
-    .hero-area .inner-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+.hero-area {
+    position: relative;
+    margin: 0 auto;
+    width: 768px;
+    height: 767px;
+    background: url("./assets/tablet/image-host.jpg") no-repeat top right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
     .signup-box {
         margin-top: 152px;
@@ -160,6 +168,7 @@ button {
         line-height: 56px;
         margin-top: 93px;
         margin-bottom: 31px;
+        text-align: left;
     }
 
     .signup-box_text {
@@ -167,6 +176,7 @@ button {
         font-size: 18px;
         line-height: 28px;
         color: #C2CBE5;
+        text-align: left;
         margin-bottom: 40px;
     }
 
@@ -193,10 +203,12 @@ button {
 
 @media screen and (min-width: 1440px) {
     .logo {
-        top: -28px
+        top: -28px;
+        margin: 0
     }
 
     .hero-area {
+        background: red;
         position: relative;
         height: 640px;
         width: 1275px;
@@ -241,6 +253,7 @@ button {
     }
 
     .decorative-pattern {
+        position: absolute;
         right: 0;
         bottom: -50px;
     }
