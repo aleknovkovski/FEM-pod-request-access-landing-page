@@ -69,3 +69,22 @@ button {
     color: #121725;
     padding: 5px 27px;
 }
+
+.client-logos {
+    width: 536px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.client-logo__apple, .client-logo__spotify {
+    height: 29px;
+}
+
+.client-logo__pocket {
+    height: 26px;
+}
+
+.client-logo__google {
+    height: 18px;
+}
