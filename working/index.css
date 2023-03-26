@@ -1,7 +1,19 @@
+*{
+    margin: 0;
+}
+
 body {
     background: #121725;
     color: #C2CBE5;
     font-family: 'Chivo', sans-serif;
+}
+
+.decorative-pattern {
+    width: 232px;
+    height: 104px;
+    margin-top: 153px;
+    position: absolute;
+    bottom: -153px;
 }
 
 .logo {
@@ -14,9 +26,10 @@ body {
 
 .hero-area {
     position: relative;
-    height: 640px;
-    width: 1275px;
-    background: red;
+    margin: 0 auto;
+    width: 768px;
+    height: 767px;
+    background: url("./assets/tablet/image-host.jpg") no-repeat top right;
 }
 
 .hero-area .inner-box {
@@ -57,55 +70,55 @@ h1 {
     margin-bottom: 40px;
 }
 
-@media screen and (min-width: 1440px) {
-    .logo {
-        top: -28px
-    }
+/*@media screen and (min-width: 1440px) {*/
+/*    .logo {*/
+/*        top: -28px*/
+/*    }*/
 
-    .hero-area {
-        position: relative;
-        height: 640px;
-        width: 1275px;
-        margin: 130px auto;
-        background: url("./assets/desktop/image-host.jpg") no-repeat top right;
-    }
+/*    .hero-area {*/
+/*        position: relative;*/
+/*        height: 640px;*/
+/*        width: 1275px;*/
+/*        margin: 130px auto;*/
+/*        background: url("./assets/desktop/image-host.jpg") no-repeat top right;*/
+/*    }*/
 
-    .hero-area .inner-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+/*    .hero-area .inner-box {*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        justify-content: space-between;*/
+/*    }*/
 
-    .signup-box {
-        background: #121725;
-        width: 723px;
-    }
+/*    .signup-box {*/
+/*        background: #121725;*/
+/*        width: 723px;*/
+/*    }*/
 
-    h1 {
-        font-size: 52px;
-        line-height: 62px;
-        text-transform: uppercase;
-        color: #54E6AF;
-        margin-top: 88px;
-        margin-bottom: 24px;
-    }
+/*    h1 {*/
+/*        font-size: 52px;*/
+/*        line-height: 62px;*/
+/*        text-transform: uppercase;*/
+/*        color: #54E6AF;*/
+/*        margin-top: 88px;*/
+/*        margin-bottom: 24px;*/
+/*    }*/
 
-    .signup-box_text {
-        width: 445px;
-        font-size: 18px;
-        line-height: 28px;
-        color: #C2CBE5;
-        margin-bottom: 40px;
-    }
+/*    .signup-box_text {*/
+/*        width: 445px;*/
+/*        font-size: 18px;*/
+/*        line-height: 28px;*/
+/*        color: #C2CBE5;*/
+/*        margin-bottom: 40px;*/
+/*    }*/
 
-    .heading, .signup-box_text {
-        font-weight: 100;
-    }
+/*    .heading, .signup-box_text {*/
+/*        font-weight: 100;*/
+/*    }*/
 
-    .heading__light {
-        color: #C2CBE5;
-    }
-}
+/*    .heading__light {*/
+/*        color: #C2CBE5;*/
+/*    }*/
+/*}*/
 
 .signup-input {
     background: #2C344B;
@@ -149,6 +162,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 3px;
 }
 
 .client-logo__apple, .client-logo__spotify {
@@ -163,8 +177,8 @@ button {
     height: 18px;
 }
 
-.decorative-pattern {
-    position: absolute;
-    right: 130px;
-    bottom: 0;
-}
+/*.decorative-pattern {*/
+/*    position: absolute;*/
+/*    right: 130px;*/
+/*    bottom: 0;*/
+/*}*/
