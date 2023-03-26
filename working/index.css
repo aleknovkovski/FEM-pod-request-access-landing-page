@@ -23,6 +23,9 @@ body {
     flex-direction: column;
 }
 
+.signup-form {
+    margin-bottom: 1em;
+}
 .signup-form__inputs {
     display: flex;
     flex-direction: column;
