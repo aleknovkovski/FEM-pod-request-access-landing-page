@@ -70,7 +70,11 @@ input, button {
 
 input {
     background: #2C344B;
-    margin-left: 32px;
+    padding-left: 32px;
+    border-radius: 28px;
+    color: white;
+    mix-blend-mode: normal;
+    opacity: 0.5;
 }
 
 button {
