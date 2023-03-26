@@ -79,6 +79,10 @@ button {
     box-shadow: 0 25px 20px -20px rgba(84, 230, 175, 0.497913);
 }
 
+button:hover {
+    background: #B3FFE2;
+}
+
 .client-logos {
     display: flex;
     align-items: center;
