@@ -1,5 +1,6 @@
 const formEl = document.querySelector(".signup-form")
 const inputEl = document.querySelector(".signup-form input")
+const emailAlertEl = document.querySelector(".email-validity-alert")
 
 const validateEmail = (email) => {
     const pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
@@ -8,8 +9,15 @@ const validateEmail = (email) => {
 
 formEl.addEventListener("submit", (e) => {
     e.preventDefault();
-    const emailIsValid = validateEmail(inputEl.value);
-    if(!emailIsValid) {
-        alert("email not valid")
+
+    if (!inputEl.value) {
+         return emailAlertEl.innerText = "Oops! Please add your email"
     }
+
+    const emailIsValid = validateEmail(inputEl.value);
+
+    if(!emailIsValid) {
+        return emailAlertEl.innerText = "Oops! Please check your email"
+    }
+    emailAlertEl.innerText = ""
 })

@@ -23,10 +23,19 @@ body {
     flex-direction: column;
 }
 
-.signup-form {
+.signup-form__inputs {
     display: flex;
     flex-direction: column;
     order: 2;
+}
+
+.email-validity-alert {
+    text-align: left;
+    padding-left: 2em;
+    padding-top: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FB3E3E;
 }
 
 .heading {
@@ -110,9 +119,13 @@ button:hover {
 
 @media screen and (min-width: 768px) {
     .signup-form {
+        margin-bottom: 64px;
+        width: 427px;
+    }
+
+    .signup-form__inputs {
         order: 0;
         background: #2C344B;
-        width: 427px;
         height: 56px;
         font-size: 14px;
         line-height: 28px;
@@ -121,7 +134,6 @@ button:hover {
         flex-direction: row;
         justify-content: space-between;
         border-radius: 28px;
-        margin-bottom: 64px;
     }
 
     button {
@@ -149,16 +161,16 @@ button:hover {
         margin-left: 39px;
     }
 
-.hero-area {
-    position: relative;
-    margin: 0 auto;
-    width: 768px;
-    height: 767px;
-    background: url("./assets/tablet/image-host.jpg") no-repeat top right;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    .hero-area {
+        position: relative;
+        margin: 0 auto;
+        width: 768px;
+        height: 767px;
+        background: url("./assets/tablet/image-host.jpg") no-repeat top right;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
     .signup-box {
         margin-top: 152px;
