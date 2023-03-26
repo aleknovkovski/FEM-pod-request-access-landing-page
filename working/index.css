@@ -7,10 +7,12 @@ body {
 .logo {
     width: 135px;
     height: 56px;
-    position: relative;
+    position: absolute;
     top: -28px
 }
+
 .hero-area {
+    position: relative;
     height: 640px;
     width: 1275px;
     margin: 130px auto;
@@ -107,4 +109,10 @@ button {
 
 .client-logo__google {
     height: 18px;
+}
+
+.decorative-pattern {
+    position: absolute;
+    right: 130px;
+    bottom: 0;
 }
